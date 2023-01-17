@@ -1,0 +1,7 @@
+{
+  "name": "h5p.serlopoc",
+  "version": "0.0.0",
+  "description": "Proof of concept for integration into h5p",
+  "author": "Serlo",
+  "license": "MIT"
+}

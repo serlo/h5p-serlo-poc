@@ -1,0 +1,10 @@
+[
+  {
+    "label": "JSON Text",
+    "name": "greeting",
+    "type": "text",
+    "default": "[]",
+    "description": "The edtr-io serialized state",
+    "widget": "textarea"
+  }
+]
