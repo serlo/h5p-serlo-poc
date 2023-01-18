@@ -3,7 +3,7 @@
   "description": "Proof of Concept for Serlo Integration",
   "majorVersion": 1,
   "minorVersion": 0,
-  "patchVersion": 9,
+  "patchVersion": 18,
   "runnable": 1,
   "author": "Serlo",
   "license": "cc-by-sa",
@@ -11,6 +11,11 @@
   "preloadedJs": [
     {
       "path": "dist/bundle.js"
+    }
+  ],
+  "preloadedCss": [
+    {
+      "path": "css/serlo.css"
     }
   ]
 }

@@ -32,7 +32,10 @@ H5P.SerloPoC = (function ($) {
   C.prototype.attach = function ($container) {
     $container.append(`<div id="${this.id}"></div>`);
 
-    render(<App />, document.getElementById(this.id));
+    render(
+      <App json={this.options.content} />,
+      document.getElementById(this.id)
+    );
   };
 
   return C;
