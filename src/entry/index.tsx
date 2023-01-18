@@ -1,13 +1,8 @@
-import React from "react";
-import ReactDOM from "react-dom";
+import { render } from "react-dom";
 
-const App = () => {
-  return <h1>Hello, World!</h1>;
-};
+import App from "../App";
 
 const H5P = (window as any).H5P || {};
-
-console.log("hallo, ich wurde geladen", H5P);
 
 H5P.SerloPoC = (function ($) {
   /**
@@ -20,8 +15,7 @@ H5P.SerloPoC = (function ($) {
       true,
       {},
       {
-        greeting: "Hello world!",
-        image: null,
+        content: "[]",
       },
       options
     );
@@ -36,14 +30,9 @@ H5P.SerloPoC = (function ($) {
    * @param {jQuery} $container
    */
   C.prototype.attach = function ($container) {
-    var self = this;
-    // Set class on container to identify it as a greeting card
-    // container.  Allows for styling later.
-    $container.addClass("h5p-greetingcard");
-    // Add greeting text.
-    $container.append('<div id="serlo-poc-root"></div>');
+    $container.append(`<div id="${this.id}"></div>`);
 
-    ReactDOM.render(<App />, document.getElementById("serlo-poc-root"));
+    render(<App />, document.getElementById(this.id));
   };
 
   return C;
