@@ -3,11 +3,11 @@
   "description": "Proof of Concept for Serlo Integration",
   "majorVersion": 1,
   "minorVersion": 0,
-  "patchVersion": 1,
+  "patchVersion": 3,
   "runnable": 1,
   "author": "Serlo",
   "license": "cc-by-sa",
-  "machineName": "H5P.SerloPoC",
+  "machineName": "h5p-serlo-poc",
   "preloadedJs": [
     {
       "path": "greetingcard.js"

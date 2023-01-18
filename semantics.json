@@ -1,7 +1,7 @@
 [
   {
     "label": "JSON Text",
-    "name": "greeting",
+    "name": "Content (edtr-io state)",
     "type": "text",
     "default": "[]",
     "description": "The edtr-io serialized state",

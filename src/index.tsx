@@ -1,3 +1,10 @@
+import React from "react";
+import ReactDOM from "react-dom";
+
+const App = () => {
+  return <h1>Hello, World!</h1>;
+};
+
 var H5P = H5P || {};
 
 H5P.SerloPoC = (function ($) {
@@ -31,24 +38,10 @@ H5P.SerloPoC = (function ($) {
     // Set class on container to identify it as a greeting card
     // container.  Allows for styling later.
     $container.addClass("h5p-greetingcard");
-    // Add image if provided.
-    if (this.options.image && this.options.image.path) {
-      $container.append(
-        '<img class="greeting-image" src="' +
-          H5P.getPath(this.options.image.path, this.id) +
-          '">'
-      );
-    }
     // Add greeting text.
-    $container.append(
-      '<div class="greeting-text">' + this.options.greeting + "</div>"
-    );
+    $container.append('<div id="serlo-poc-root"></div>');
 
-    // TODO - need to wait for image beeing loaded
-    // For now using timer. Should wait for image is loaded...
-    setTimeout(function () {
-      self.$.trigger("resize");
-    }, 1000);
+    ReactDOM.render(<App />, document.getElementById("serlo-poc-root"));
   };
 
   return C;
