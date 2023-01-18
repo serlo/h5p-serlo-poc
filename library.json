@@ -3,7 +3,7 @@
   "description": "Proof of Concept for Serlo Integration",
   "majorVersion": 1,
   "minorVersion": 0,
-  "patchVersion": 18,
+  "patchVersion": 23,
   "runnable": 1,
   "author": "Serlo",
   "license": "cc-by-sa",
@@ -16,6 +16,13 @@
   "preloadedCss": [
     {
       "path": "css/serlo.css"
+    }
+  ],
+  "editorDependencies": [
+    {
+      "machineName": "H5PEditor.SerloPoC",
+      "majorVersion": 1,
+      "minorVersion": 0
     }
   ]
 }

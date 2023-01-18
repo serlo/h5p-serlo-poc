@@ -5,6 +5,6 @@
     "type": "text",
     "default": "[]",
     "description": "The edtr-io serialized state",
-    "widget": "textarea"
+    "widget": "serloPoC"
   }
 ]
