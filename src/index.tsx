@@ -5,7 +5,9 @@ const App = () => {
   return <h1>Hello, World!</h1>;
 };
 
-var H5P = H5P || {};
+const H5P = (window as any).H5P || {};
+
+console.log("hallo, ich wurde geladen", H5P);
 
 H5P.SerloPoC = (function ($) {
   /**

@@ -1,0 +1,10 @@
+build
+node_modules
+src
+.git
+.babelrc
+.h5pignore
+webpack.config.js
+README.md
+package.json
+package-lock.json
