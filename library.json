@@ -3,7 +3,7 @@
   "description": "Proof of Concept for Serlo Integration",
   "majorVersion": 1,
   "minorVersion": 0,
-  "patchVersion": 23,
+  "patchVersion": 26,
   "runnable": 1,
   "author": "Serlo",
   "license": "cc-by-sa",
